@@ -1,5 +1,7 @@
 # RIOPulse - Mythic+ WoW Tracking Application
 
+# 🚧 WIP 🚧
+
 ## Main Objective
 
  - Creation of a Mythic+ performance tracking application for World of Warcraft, using the Raider.io API, allowing for personalized and comparative score tracking.
