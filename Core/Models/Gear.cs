@@ -1,9 +1,13 @@
+using System.Text.Json.Serialization;
 namespace RioPulse.Models;
 
 public class Gear
 {
+    [JsonPropertyName("item_level_equipped")]
     public string ItemLevelEquipped { get; set; }
+    [JsonPropertyName("item_level_total")]
     public string ItemLevelTotal { get; set; }
+    [JsonPropertyName("artifact_traits")]
     public string ArtifactTraits { get; set; }
 
     public string Head { get; set; }
