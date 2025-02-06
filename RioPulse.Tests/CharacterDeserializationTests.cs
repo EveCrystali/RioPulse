@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public class CharacterDeserializationTests
 {
-    private async Task<string> LoadJsonTestFile(string fileName)
+    private static async Task<string> LoadJsonTestFile(string fileName)
     {
         return await File.ReadAllTextAsync(fileName);
     }

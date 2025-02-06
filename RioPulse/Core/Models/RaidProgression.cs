@@ -5,13 +5,11 @@ namespace RioPulse.Models;
 
 public class RaidProgression
 {
-    public string RaidName { get; set; }
-    
     [JsonPropertyName("summary")]
     public string Summary { get; set; }
     
     [JsonPropertyName("expansion_id")]
-    public string ExpansionId { get; set; }
+    public int ExpansionId { get; set; }
 
     [JsonPropertyName("total_bosses")]
     public int TotalBosses { get; set; } = 0;
