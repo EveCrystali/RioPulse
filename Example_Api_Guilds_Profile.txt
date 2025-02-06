@@ -1,0 +1,636 @@
+{
+  "name": "Ludicrous Speed",
+  "faction": "horde",
+  "region": "us",
+  "realm": "Skullcrusher",
+  "profile_url": "https://raider.io/guilds/us/skullcrusher/Ludicrous%20Speed",
+  "raid_rankings": {
+    "liberation-of-undermine": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "nerubar-palace": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "blackrock-depths": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "awakened-amirdrassil-the-dreams-hope": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "awakened-aberrus-the-shadowed-crucible": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "awakened-vault-of-the-incarnates": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "amirdrassil-the-dreams-hope": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "aberrus-the-shadowed-crucible": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "vault-of-the-incarnates": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "fated-sepulcher-of-the-first-ones": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "fated-sanctum-of-domination": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "fated-castle-nathria": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "sepulcher-of-the-first-ones": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "sanctum-of-domination": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "castle-nathria": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "nyalotha-the-waking-city": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "the-eternal-palace": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "crucible-of-storms": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "battle-of-dazaralor": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "uldir": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "antorus-the-burning-throne": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "tomb-of-sargeras": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "the-nighthold": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "trial-of-valor": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    },
+    "the-emerald-nightmare": {
+      "normal": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "heroic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      },
+      "mythic": {
+        "world": 799,
+        "region": 564,
+        "realm": 20
+      }
+    }
+  },
+  "raid_progression": {
+    "liberation-of-undermine": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "nerubar-palace": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "blackrock-depths": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "awakened-amirdrassil-the-dreams-hope": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "awakened-aberrus-the-shadowed-crucible": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "awakened-vault-of-the-incarnates": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "amirdrassil-the-dreams-hope": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "aberrus-the-shadowed-crucible": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "vault-of-the-incarnates": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "fated-sepulcher-of-the-first-ones": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "fated-sanctum-of-domination": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "fated-castle-nathria": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "sepulcher-of-the-first-ones": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "sanctum-of-domination": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "castle-nathria": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "nyalotha-the-waking-city": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "the-eternal-palace": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "crucible-of-storms": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "battle-of-dazaralor": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "uldir": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "antorus-the-burning-throne": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "tomb-of-sargeras": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "the-nighthold": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "trial-of-valor": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "the-emerald-nightmare": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    }
+  }
+}

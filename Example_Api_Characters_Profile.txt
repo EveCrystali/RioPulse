@@ -1,0 +1,444 @@
+{
+  "name": "Ulsoga",
+  "race": "Orc",
+  "class": "Warlock",
+  "active_spec_name": "Affliction",
+  "active_spec_role": "DPS",
+  "gender": "female",
+  "faction": "horde",
+  "achievement_points": 23905,
+  "thumbnail_url": "https://render.worldofwarcraft.com/us/character/burning-blade/0/239444992-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
+  "region": "us",
+  "realm": "Skullcrusher",
+  "last_crawled_at": "2024-10-09T04:31:20.000Z",
+  "profile_url": "https://raider.io/characters/us/skullcrusher/Ulsoga",
+  "profile_banner": "classbanner_paladin1",
+  "use_animated_banner": false,
+  "gear": {
+    "item_level_equipped": 0,
+    "item_level_total": 0,
+    "artifact_traits": 0
+  },
+  "raid_progression": {
+    "liberation-of-undermine": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "nerubar-palace": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "blackrock-depths": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "awakened-amirdrassil-the-dreams-hope": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "awakened-aberrus-the-shadowed-crucible": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "awakened-vault-of-the-incarnates": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "amirdrassil-the-dreams-hope": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "aberrus-the-shadowed-crucible": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "vault-of-the-incarnates": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "fated-sepulcher-of-the-first-ones": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "fated-sanctum-of-domination": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "fated-castle-nathria": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "sepulcher-of-the-first-ones": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "sanctum-of-domination": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "castle-nathria": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "nyalotha-the-waking-city": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "the-eternal-palace": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "crucible-of-storms": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "battle-of-dazaralor": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "uldir": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "antorus-the-burning-throne": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "tomb-of-sargeras": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "the-nighthold": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "trial-of-valor": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    },
+    "the-emerald-nightmare": {
+      "summary": "4/10 H",
+      "expansion_id": 8,
+      "total_bosses": 10,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 4,
+      "mythic_bosses_killed": 0
+    }
+  },
+  "mythic_plus_scores_by_season": [
+    {
+      "season": "string",
+      "scores": {
+        "all": 0,
+        "dps": 0,
+        "healer": 0,
+        "tank": 0,
+        "spec_0": 0,
+        "spec_1": 0,
+        "spec_2": 0,
+        "spec_3": 0
+      },
+      "segments": {
+        "all": {
+          "score": 0,
+          "color": "string"
+        },
+        "dps": {
+          "score": 0,
+          "color": "string"
+        },
+        "healer": {
+          "score": 0,
+          "color": "string"
+        },
+        "tank": {
+          "score": 0,
+          "color": "string"
+        },
+        "spec_0": {
+          "score": 0,
+          "color": "string"
+        },
+        "spec_1": {
+          "score": 0,
+          "color": "string"
+        },
+        "spec_2": {
+          "score": 0,
+          "color": "string"
+        },
+        "spec_3": {
+          "score": 0,
+          "color": "string"
+        }
+      }
+    }
+  ],
+  "mythic_plus_ranks": {
+    "overall": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "tank": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "healer": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "dps": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "class": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "class_tank": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "class_healer": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "class_dps": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    }
+  },
+  "previous_mythic_plus_ranks": {
+    "overall": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "tank": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "healer": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "dps": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "class": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "class_tank": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "class_healer": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    },
+    "class_dps": {
+      "world": 799,
+      "region": 564,
+      "realm": 20
+    }
+  },
+  "mythic_plus_recent_runs": [
+    {
+      "dungeon": "Mists of Tirna Scithe",
+      "short_name": "MISTS",
+      "mythic_level": 10,
+      "keystone_run_id": 16196237,
+      "completed_at": "2024-09-22T03:02:51.000Z",
+      "clear_time_ms": 1636548,
+      "par_time_ms": 1800999,
+      "num_keystone_upgrades": 2,
+      "map_challenge_mode_id": 375,
+      "zone_id": 13334,
+      "zone_expansion_id": 8,
+      "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_mistsoftirnascithe.jpg",
+      "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion8/base/mists-of-tirna-scithe.jpg",
+      "score": 326.6,
+      "url": "https://raider.io/mythic-plus-runs/season-tww-1/5376417-10-mists-of-tirna-scithe",
+      "affixes": [
+        {
+          "id": 148,
+          "name": "Xal'atath's Bargain: Ascendant",
+          "description": "While in combat, Xal'atath rains down orbs of cosmic energy that empower enemies or players.",
+          "icon": "inv_nullstone_cosmicvoid",
+          "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_nullstone_cosmicvoid.jpg",
+          "wowhead_url": "https://wowhead.com/affix=148"
+        }
+      ]
+    }
+  ],
+  "mythic_plus_best_runs": [
+    {
+      "dungeon": "Mists of Tirna Scithe",
+      "short_name": "MISTS",
+      "mythic_level": 10,
+      "keystone_run_id": 16196237,
+      "completed_at": "2024-09-22T03:02:51.000Z",
+      "clear_time_ms": 1636548,
+      "par_time_ms": 1800999,
+      "num_keystone_upgrades": 2,
+      "map_challenge_mode_id": 375,
+      "zone_id": 13334,
+      "zone_expansion_id": 8,
+      "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_mistsoftirnascithe.jpg",
+      "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion8/base/mists-of-tirna-scithe.jpg",
+      "score": 326.6,
+      "url": "https://raider.io/mythic-plus-runs/season-tww-1/5376417-10-mists-of-tirna-scithe",
+      "affixes": [
+        {
+          "id": 148,
+          "name": "Xal'atath's Bargain: Ascendant",
+          "description": "While in combat, Xal'atath rains down orbs of cosmic energy that empower enemies or players.",
+          "icon": "inv_nullstone_cosmicvoid",
+          "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_nullstone_cosmicvoid.jpg",
+          "wowhead_url": "https://wowhead.com/affix=148"
+        }
+      ]
+    }
+  ],
+  "mythic_plus_alternate_runs": [
+    {
+      "dungeon": "Mists of Tirna Scithe",
+      "short_name": "MISTS",
+      "mythic_level": 10,
+      "keystone_run_id": 16196237,
+      "completed_at": "2024-09-22T03:02:51.000Z",
+      "clear_time_ms": 1636548,
+      "par_time_ms": 1800999,
+      "num_keystone_upgrades": 2,
+      "map_challenge_mode_id": 375,
+      "zone_id": 13334,
+      "zone_expansion_id": 8,
+      "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_mistsoftirnascithe.jpg",
+      "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion8/base/mists-of-tirna-scithe.jpg",
+      "score": 326.6,
+      "url": "https://raider.io/mythic-plus-runs/season-tww-1/5376417-10-mists-of-tirna-scithe",
+      "affixes": [
+        {
+          "id": 148,
+          "name": "Xal'atath's Bargain: Ascendant",
+          "description": "While in combat, Xal'atath rains down orbs of cosmic energy that empower enemies or players.",
+          "icon": "inv_nullstone_cosmicvoid",
+          "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_nullstone_cosmicvoid.jpg",
+          "wowhead_url": "https://wowhead.com/affix=148"
+        }
+      ]
+    }
+  ]
+}

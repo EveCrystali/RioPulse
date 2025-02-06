@@ -1,0 +1,3055 @@
+{
+  "name": "Et pourquoi pas",
+  "faction": "alliance",
+  "region": "eu",
+  "realm": "Dalaran",
+  "last_crawled_at": "2025-01-27T10:06:27.000Z",
+  "profile_url": "https://raider.io/guilds/eu/dalaran/Et%20pourquoi%20pas",
+  "members": [
+    {
+      "rank": 2,
+      "character": {
+        "name": "Slicedot",
+        "race": "Orc",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "horde",
+        "achievement_points": 16480,
+        "region": "eu",
+        "realm": "Sargeras",
+        "last_crawled_at": "2025-01-03T19:46:36.000Z",
+        "profile_url": "https://raider.io/characters/eu/sargeras/Slicedot",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Skizofrenia",
+        "race": "Orc",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 24020,
+        "region": "eu",
+        "realm": "Ysondre",
+        "last_crawled_at": "2025-01-29T22:56:50.000Z",
+        "profile_url": "https://raider.io/characters/eu/ysondre/Skizofrenia",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 1,
+      "character": {
+        "name": "Elùndir",
+        "race": "Draenei",
+        "class": "Shaman",
+        "active_spec_name": "Enhancement",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 26980,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T22:50:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Elùndir",
+        "profile_banner": "alliancebanner2"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Tinabys",
+        "race": "Dwarf",
+        "class": "Priest",
+        "active_spec_name": "Shadow",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17515,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T22:50:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tinabys",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Faälzh",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Havoc",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17230,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Faälzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Tatsü",
+        "race": "Void Elf",
+        "class": "Monk",
+        "active_spec_name": "Windwalker",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22015,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:46.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tatsü",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Droxss",
+        "race": "Blood Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Vengeance",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 23260,
+        "region": "eu",
+        "realm": "Ysondre",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/ysondre/Droxss",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Fålzh",
+        "race": "Kul Tiran",
+        "class": "Death Knight",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 18125,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fålzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Fálzh",
+        "race": "Dwarf",
+        "class": "Hunter",
+        "active_spec_name": "Survival",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17610,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fálzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Fàlzh",
+        "race": "Void Elf",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 18150,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fàlzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rinélia",
+        "race": "Void Elf",
+        "class": "Warlock",
+        "active_spec_name": "Demonology",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22025,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:46.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rinélia",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Tinabi",
+        "race": "Human",
+        "class": "Paladin",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17270,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tinabi",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Azkan",
+        "race": "Worgen",
+        "class": "Death Knight",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 35475,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Azkan",
+        "profile_banner": "",
+        "use_animated_banner": false
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Fäalzh",
+        "race": "Void Elf",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 18180,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:49.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fäalzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Falzh",
+        "race": "Dwarf",
+        "class": "Warrior",
+        "active_spec_name": "Fury",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 18180,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-25T22:22:02.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Falzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Châïns",
+        "race": "Void Elf",
+        "class": "Rogue",
+        "active_spec_name": "Outlaw",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21055,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Châïns",
+        "profile_banner": "classbanner_rogue1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Pyroslyce",
+        "race": "Undead",
+        "class": "Mage",
+        "active_spec_name": "Arcane",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "horde",
+        "achievement_points": 16430,
+        "region": "eu",
+        "realm": "Sargeras",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/sargeras/Pyroslyce",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 0,
+      "character": {
+        "name": "Neï",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Guardian",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22750,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T20:04:08.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Neï",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Caneïa",
+        "race": "Vulpera",
+        "class": "Shaman",
+        "active_spec_name": "Elemental",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 21505,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Caneïa",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Nëi",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Vengeance",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22740,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T06:32:08.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Nëi",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Mashâ",
+        "race": "Void Elf",
+        "class": "Warlock",
+        "active_spec_name": "Demonology",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22740,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-25T23:01:39.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Mashâ",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Néléha",
+        "race": "Blood Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Havoc",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 21620,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Néléha",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rirunette",
+        "race": "Blood Elf",
+        "class": "Priest",
+        "active_spec_name": "Shadow",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 21620,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rirunette",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Riclaimer",
+        "race": "Dwarf",
+        "class": "Paladin",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19905,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Riclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Goats",
+        "race": "Dwarf",
+        "class": "Hunter",
+        "active_spec_name": "Beast Mastery",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19865,
+        "region": "eu",
+        "realm": "Les Sentinelles",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/les-sentinelles/Goats",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Fãlzh",
+        "race": "Dwarf",
+        "class": "Monk",
+        "active_spec_name": "Mistweaver",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 18180,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-19T04:34:57.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fãlzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 3,
+      "character": {
+        "name": "Elzeck",
+        "race": "Human",
+        "class": "Warrior",
+        "active_spec_name": "Arms",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 25315,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Elzeck",
+        "profile_banner": "classbanner_warrior1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Sälhyna",
+        "race": "Night Elf",
+        "class": "Hunter",
+        "active_spec_name": "Beast Mastery",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 12480,
+        "region": "eu",
+        "realm": "Khaz Modan",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/khaz-modan/Sälhyna",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Chäìns",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Guardian",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21145,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:48.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chäìns",
+        "profile_banner": "classbanner_druid1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Chãins",
+        "race": "Void Elf",
+        "class": "Priest",
+        "active_spec_name": "Shadow",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 18885,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chãins",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Hnóss",
+        "race": "Night Elf",
+        "class": "Hunter",
+        "active_spec_name": "Beast Mastery",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21450,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Hnóss",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Salhyne",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Vengeance",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 12770,
+        "region": "eu",
+        "realm": "Khaz Modan",
+        "last_crawled_at": "2025-01-26T21:01:39.000Z",
+        "profile_url": "https://raider.io/characters/eu/khaz-modan/Salhyne",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Azar",
+        "race": "Draenei",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 35410,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Azar",
+        "profile_banner": "",
+        "use_animated_banner": false
+      }
+    },
+    {
+      "rank": 1,
+      "character": {
+        "name": "Hiliih",
+        "race": "Dwarf",
+        "class": "Paladin",
+        "active_spec_name": "Holy",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22850,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T22:50:16.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Hiliih",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Elrelia",
+        "race": "Draenei",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 6620,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:17.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Elrelia",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Shirkan",
+        "race": "Dwarf",
+        "class": "Paladin",
+        "active_spec_name": "Holy",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 6620,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Shirkan",
+        "profile_banner": "classbanner_paladin1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Fufutta",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Vengeance",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22725,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fufutta",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Yaxson",
+        "race": "Worgen",
+        "class": "Warrior",
+        "active_spec_name": "Arms",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 13005,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T14:46:37.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Yaxson",
+        "profile_banner": "classbanner_warrior1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Baliios",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 20390,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Baliios",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Chåíns",
+        "race": "Void Elf",
+        "class": "Monk",
+        "active_spec_name": "Brewmaster",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 18885,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chåíns",
+        "profile_banner": "classbanner_monk1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Hillih",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22850,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-18T23:54:10.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Hillih",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Chaíns",
+        "race": "Dwarf",
+        "class": "Hunter",
+        "active_spec_name": "Beast Mastery",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 21065,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chaíns",
+        "profile_banner": "classbanner_druid1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Roupille",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Balance",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22025,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:50.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Roupille",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Yeziyun",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Vengeance",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 17070,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Yeziyun",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Tinabis",
+        "race": "Worgen",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 15715,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tinabis",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Bazyli",
+        "race": "Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 13005,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T17:01:40.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Bazyli",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Amélîà",
+        "race": "Mechagnome",
+        "class": "Mage",
+        "active_spec_name": "Arcane",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22740,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T06:24:43.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Amélîà",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 3,
+      "character": {
+        "name": "Ktazz",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Havoc",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 6820,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Ktazz",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Azuyu",
+        "race": "Dwarf",
+        "class": "Hunter",
+        "active_spec_name": "Survival",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 35900,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-26T22:18:48.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Azuyu",
+        "profile_banner": "alliancebanner17"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Noémiie",
+        "race": "Dwarf",
+        "class": "Monk",
+        "active_spec_name": "Brewmaster",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22740,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T06:18:10.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Noémiie",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Truffe",
+        "race": "Vulpera",
+        "class": "Rogue",
+        "active_spec_name": "Outlaw",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 21505,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:26.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Truffe",
+        "profile_banner": "",
+        "use_animated_banner": false
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Patience",
+        "race": "Void Elf",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22010,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:47.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Patience",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Ezlo",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 12955,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-17T11:19:41.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Ezlo",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Neî",
+        "race": "Worgen",
+        "class": "Death Knight",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 21930,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Neî",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Néi",
+        "race": "Dark Iron Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Elemental",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22345,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Néi",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Nêi",
+        "race": "Dark Iron Dwarf",
+        "class": "Hunter",
+        "active_spec_name": "Marksmanship",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 20425,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Nêi",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Kapuchette",
+        "race": "Dwarf",
+        "class": "Priest",
+        "active_spec_name": "Discipline",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22850,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:49.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Kapuchette",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Hiiliih",
+        "race": "Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22850,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-23T18:48:44.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Hiiliih",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Fuffutta",
+        "race": "Void Elf",
+        "class": "Rogue",
+        "active_spec_name": "Assassination",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22850,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:49.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fuffutta",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rõsée",
+        "race": "Draenei",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22025,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T18:14:30.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rõsée",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Klev",
+        "race": "Human",
+        "class": "Death Knight",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 12030,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:47.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Klev",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Thankor",
+        "race": "Human",
+        "class": "Warrior",
+        "active_spec_name": "Fury",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 28035,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-12T20:45:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Thankor",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Vramlin",
+        "race": "Dark Iron Dwarf",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22455,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Vramlin",
+        "profile_banner": "classbanner_warlock1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Neïî",
+        "race": "Lightforged Draenei",
+        "class": "Priest",
+        "active_spec_name": "Discipline",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22740,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T18:07:06.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Neïî",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Neei",
+        "race": "Human",
+        "class": "Rogue",
+        "active_spec_name": "Subtlety",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 20400,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:23.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Neei",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Ríclaimer",
+        "race": "Dwarf",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19885,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Ríclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rìclaimer",
+        "race": "Dwarf",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19905,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rìclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Hornz",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Havoc",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 26390,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:26.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Hornz",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Sïlâs",
+        "race": "Lightforged Draenei",
+        "class": "Paladin",
+        "active_spec_name": "Holy",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 12030,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:47.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Sïlâs",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Dølwin",
+        "race": "Dwarf",
+        "class": "Warrior",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22670,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-19T04:35:00.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Dølwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Molwin",
+        "race": "Dwarf",
+        "class": "Priest",
+        "active_spec_name": "Shadow",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22495,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Molwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rilune",
+        "race": "Lightforged Draenei",
+        "class": "Paladin",
+        "active_spec_name": "Holy",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21450,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rilune",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Healaeh",
+        "race": "Void Elf",
+        "class": "Mage",
+        "active_spec_name": "Fire",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21180,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Healaeh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Heallaeh",
+        "race": "Human",
+        "class": "Monk",
+        "active_spec_name": "Mistweaver",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22850,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-19T04:35:00.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Heallaeh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 3,
+      "character": {
+        "name": "Fañdy",
+        "race": "Night Elf",
+        "class": "Hunter",
+        "active_spec_name": "Beast Mastery",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21385,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:24.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fañdy",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Aubecrystali",
+        "race": "Night Elf",
+        "class": "Rogue",
+        "active_spec_name": "Assassination",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 10390,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T16:53:01.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Aubecrystali",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Canarí",
+        "race": "Void Elf",
+        "class": "Death Knight",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21460,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Canarí",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Aïdémaux",
+        "race": "Human",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 23215,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Aïdémaux",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Wiclaimer",
+        "race": "Dwarf",
+        "class": "Warrior",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19865,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:23.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Wiclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Kolwin",
+        "race": "Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Elemental",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22495,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Kolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 3,
+      "character": {
+        "name": "Baliem",
+        "race": "Gnome",
+        "class": "Warlock",
+        "active_spec_name": "Demonology",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19970,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Baliem",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rolwin",
+        "race": "Dwarf",
+        "class": "Paladin",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22670,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T22:50:16.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Siclaimer",
+        "race": "Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19905,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Siclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Solwin",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Balance",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22495,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:24.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Solwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Fáàlzh",
+        "race": "Kul Tiran",
+        "class": "Druid",
+        "active_spec_name": "Balance",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17040,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fáàlzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Yolwin",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Vengeance",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22485,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:28.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Yolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Canelia",
+        "race": "Kul Tiran",
+        "class": "Druid",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 6620,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Canelia",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Droxdormu",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Preservation",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 23340,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:47.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Droxdormu",
+        "profile_banner": "classbanner_priest1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Nuggle",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Augmentation",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 12990,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T11:37:32.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Nuggle",
+        "profile_banner": "covenantbanner_necrolord"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Chãíns",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Devastation",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21125,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-11T00:35:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chãíns",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Eolwin",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Preservation",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22495,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:20.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Eolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Saviwar",
+        "race": "Dwarf",
+        "class": "Warrior",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 24095,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Saviwar",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Hileah",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Preservation",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22765,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:24.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Hileah",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Elùndîr",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Augmentation",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 26650,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Elùndîr",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Rirustrasza",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Devastation",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22025,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T18:20:47.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rirustrasza",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Aïdios",
+        "race": "Void Elf",
+        "class": "Death Knight",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22975,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:26.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Aïdios",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Holwin",
+        "race": "Dwarf",
+        "class": "Hunter",
+        "active_spec_name": "Beast Mastery",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22290,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:26.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Holwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Dragoneï",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Devastation",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 20400,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:24.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Dragoneï",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Dfalzh",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Devastation",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 16975,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:23.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Dfalzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rïclaimer",
+        "race": "Dwarf",
+        "class": "Death Knight",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19885,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:26.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rïclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rîclaimer",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Balance",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 19905,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rîclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Foeh",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Vengeance",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 19865,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:23.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Foeh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Demiadk",
+        "race": "Dwarf",
+        "class": "Death Knight",
+        "active_spec_name": "Unholy",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 11935,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:23.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Demiadk",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Droxxss",
+        "race": "Kul Tiran",
+        "class": "Druid",
+        "active_spec_name": "Balance",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 23025,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Droxxss",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Colwin",
+        "race": "Dwarf",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22495,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Colwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Chains",
+        "race": "Blood Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Havoc",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 20430,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chains",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Scourg",
+        "race": "Orc",
+        "class": "Hunter",
+        "active_spec_name": "Beast Mastery",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "horde",
+        "achievement_points": 19565,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Scourg",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Priclaimer",
+        "race": "Dwarf",
+        "class": "Priest",
+        "active_spec_name": "Discipline",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19905,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Priclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Chàins",
+        "race": "Blood Elf",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 18390,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chàins",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Chåìns",
+        "race": "Void Elf",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 17780,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:16.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chåìns",
+        "profile_banner": "classbanner_warlock1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Fâlzh",
+        "race": "Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Enhancement",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 18180,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-22T16:15:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fâlzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Aubemage",
+        "race": "Dark Iron Dwarf",
+        "class": "Mage",
+        "active_spec_name": "Fire",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 10275,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Aubemage",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Tinamy",
+        "race": "Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 15855,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tinamy",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Lolwin",
+        "race": "Dwarf",
+        "class": "Rogue",
+        "active_spec_name": "Assassination",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22670,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-24T21:50:52.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Lolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Mazette",
+        "race": "Dark Iron Dwarf",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21450,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Mazette",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Tinabyt",
+        "race": "Dwarf",
+        "class": "Death Knight",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17175,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tinabyt",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Fäälzh",
+        "race": "Dwarf",
+        "class": "Paladin",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 18125,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fäälzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Aïdouhi",
+        "race": "Troll",
+        "class": "Druid",
+        "active_spec_name": "Balance",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 23170,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:23.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Aïdouhi",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Xolwin",
+        "race": "Dwarf",
+        "class": "Monk",
+        "active_spec_name": "Mistweaver",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22290,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Xolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Hiilih",
+        "race": "Gnome",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21180,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Hiilih",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Pètesec",
+        "race": "Blood Elf",
+        "class": "Priest",
+        "active_spec_name": "Shadow",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 22070,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:48.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Pètesec",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Leokadia",
+        "race": "Human",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 12860,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-17T11:19:40.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Leokadia",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Slycetotem",
+        "race": "Mag'har Orc",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "horde",
+        "achievement_points": 16480,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-19T04:35:00.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Slycetotem",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Sliceholy",
+        "race": "Blood Elf",
+        "class": "Paladin",
+        "active_spec_name": "Retribution",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 16440,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:24.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Sliceholy",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Bolwin",
+        "race": "Dwarf",
+        "class": "Death Knight",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22670,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-16T21:25:36.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Bolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Ixhar",
+        "race": "Blood Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Vengeance",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 20005,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Ixhar",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Oscourg",
+        "race": "Dark Iron Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Enhancement",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17990,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Oscourg",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Nêî",
+        "race": "Dwarf",
+        "class": "Warrior",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22740,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T06:27:15.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Nêî",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Droxdémo",
+        "race": "Dark Iron Dwarf",
+        "class": "Warlock",
+        "active_spec_name": "Demonology",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22985,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:22.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Droxdémo",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Fälzh",
+        "race": "Dwarf",
+        "class": "Rogue",
+        "active_spec_name": "Outlaw",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17515,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Fälzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Vänëssä",
+        "race": "Human",
+        "class": "Paladin",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21930,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:18.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Vänëssä",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Arianthe",
+        "race": "Pandaren",
+        "class": "Priest",
+        "active_spec_name": "Discipline",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 20930,
+        "region": "eu",
+        "realm": "Hyjal",
+        "last_crawled_at": "2025-01-27T10:45:49.000Z",
+        "profile_url": "https://raider.io/characters/eu/hyjal/Arianthe",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Mimsri",
+        "race": "Vulpera",
+        "class": "Priest",
+        "active_spec_name": "Shadow",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 21505,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Mimsri",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Sylvaïdas",
+        "race": "Blood Elf",
+        "class": "Hunter",
+        "active_spec_name": "Beast Mastery",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 23170,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:28.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Sylvaïdas",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Areyla",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21055,
+        "region": "eu",
+        "realm": "Hyjal",
+        "last_crawled_at": "2025-01-29T19:33:29.000Z",
+        "profile_url": "https://raider.io/characters/eu/hyjal/Areyla",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Chaïns",
+        "race": "Earthen",
+        "class": "Paladin",
+        "active_spec_name": "Retribution",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "horde",
+        "achievement_points": 21140,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:50.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chaïns",
+        "profile_banner": "hordebanner4"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Nèî",
+        "race": "Dwarf",
+        "class": "Paladin",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 21165,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Nèî",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Naindo",
+        "race": "Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 22455,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Naindo",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Azupal",
+        "race": "Lightforged Draenei",
+        "class": "Paladin",
+        "active_spec_name": "Retribution",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 33180,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:28.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Azupal",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Riruko",
+        "race": "Void Elf",
+        "class": "Warrior",
+        "active_spec_name": "Fury",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21190,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Riruko",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Pandolwin",
+        "race": "Night Elf",
+        "class": "Demon Hunter",
+        "active_spec_name": "Havoc",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 20735,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:23.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Pandolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Scourgwar",
+        "race": "Dwarf",
+        "class": "Warrior",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 18530,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Scourgwar",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Pandundir",
+        "race": "Pandaren",
+        "class": "Shaman",
+        "active_spec_name": "Enhancement",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 24410,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:24.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Pandundir",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Faalzh",
+        "race": "Dwarf",
+        "class": "Mage",
+        "active_spec_name": "Fire",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 17990,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Faalzh",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Shälyne",
+        "race": "Lightforged Draenei",
+        "class": "Paladin",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 12700,
+        "region": "eu",
+        "realm": "Khaz Modan",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/khaz-modan/Shälyne",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Rirunella",
+        "race": "Draenei",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 19340,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Rirunella",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Bigolwin",
+        "race": "Kul Tiran",
+        "class": "Druid",
+        "active_spec_name": "Guardian",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 19880,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Bigolwin",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Droxidk",
+        "race": "Gnome",
+        "class": "Death Knight",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21390,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Droxidk",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 2,
+      "character": {
+        "name": "Aleä",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Preservation",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 20930,
+        "region": "eu",
+        "realm": "Hyjal",
+        "last_crawled_at": "2025-01-30T09:45:33.000Z",
+        "profile_url": "https://raider.io/characters/eu/hyjal/Aleä",
+        "profile_banner": "classbanner_druid1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Meuvaise",
+        "race": "Highmountain Tauren",
+        "class": "Druid",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 20040,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Meuvaise",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Tinamis",
+        "race": "Pandaren",
+        "class": "Monk",
+        "active_spec_name": "Mistweaver",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 17245,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tinamis",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Tinaby",
+        "race": "Night Elf",
+        "class": "Druid",
+        "active_spec_name": "Guardian",
+        "active_spec_role": "TANK",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 15855,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tinaby",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Salhÿne",
+        "race": "Void Elf",
+        "class": "Warrior",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 12650,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:27.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Salhÿne",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Aïdørc",
+        "race": "Mag'har Orc",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 23170,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Aïdørc",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Sïlläs",
+        "race": "Worgen",
+        "class": "Priest",
+        "active_spec_name": "Discipline",
+        "active_spec_role": "HEALING",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 12020,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-27T10:45:50.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Sïlläs",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Droxicham",
+        "race": "Dark Iron Dwarf",
+        "class": "Shaman",
+        "active_spec_name": "Elemental",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 23330,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-22T22:32:08.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Droxicham",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Tinamys",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Devastation",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 17515,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-30T03:58:19.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Tinamys",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Nèi",
+        "race": "Dwarf",
+        "class": "Death Knight",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22750,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T22:27:21.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Nèi",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Terranei",
+        "race": "Earthen",
+        "class": "Paladin",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 22740,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-29T06:19:16.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Terranei",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Diclaimer",
+        "race": "Dracthyr",
+        "class": "Evoker",
+        "active_spec_name": "Augmentation",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 19905,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Diclaimer",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 1,
+      "character": {
+        "name": "Aïdø",
+        "race": "Void Elf",
+        "class": "Mage",
+        "active_spec_name": "Frost",
+        "active_spec_role": "DPS",
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 23265,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-16T18:37:25.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Aïdø",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Mëlosia",
+        "race": "Pandaren",
+        "class": "Shaman",
+        "active_spec_name": "Enhancement",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 20930,
+        "region": "eu",
+        "realm": "Hyjal",
+        "last_crawled_at": "2025-01-26T13:53:57.000Z",
+        "profile_url": "https://raider.io/characters/eu/hyjal/Mëlosia",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Virusia",
+        "race": "Night Elf",
+        "class": "Rogue",
+        "active_spec_name": "Assassination",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 23765,
+        "region": "eu",
+        "realm": "Ysondre",
+        "last_crawled_at": "2025-01-03T19:11:24.000Z",
+        "profile_url": "https://raider.io/characters/eu/ysondre/Virusia",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Cháins",
+        "race": "Draenei",
+        "class": "Death Knight",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21125,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-18T23:54:10.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Cháins",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Flesha",
+        "race": "Dracthyr",
+        "class": "Warlock",
+        "active_spec_name": "Destruction",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 20930,
+        "region": "eu",
+        "realm": "Hyjal",
+        "last_crawled_at": "2025-01-29T20:18:02.000Z",
+        "profile_url": "https://raider.io/characters/eu/hyjal/Flesha",
+        "profile_banner": "hordebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Loosha",
+        "race": "Blood Elf",
+        "class": "Monk",
+        "active_spec_name": "Mistweaver",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 20930,
+        "region": "eu",
+        "realm": "Hyjal",
+        "last_crawled_at": "2025-01-30T08:29:44.000Z",
+        "profile_url": "https://raider.io/characters/eu/hyjal/Loosha",
+        "profile_banner": "classbanner_monk1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Kurri",
+        "race": "Dracthyr",
+        "class": "Rogue",
+        "active_spec_name": "Assassination",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21880,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-03T19:11:28.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Kurri",
+        "profile_banner": "alliancebanner1"
+      }
+    },
+    {
+      "rank": 4,
+      "character": {
+        "name": "Chaîns",
+        "race": "Dracthyr",
+        "class": "Warrior",
+        "active_spec_name": "Protection",
+        "active_spec_role": "TANK",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 21135,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2025-01-23T13:39:44.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Chaîns",
+        "profile_banner": "classbanner_warrior1"
+      }
+    },
+    {
+      "rank": 3,
+      "character": {
+        "name": "Velinia-234539077",
+        "race": "Mechagnome",
+        "class": "Monk",
+        "active_spec_name": null,
+        "active_spec_role": null,
+        "gender": "male",
+        "faction": "alliance",
+        "achievement_points": 0,
+        "region": "eu",
+        "realm": "Dalaran",
+        "last_crawled_at": "2017-01-19T00:00:00.000Z",
+        "profile_url": "https://raider.io/characters/eu/dalaran/Velinia-234539077",
+        "profile_banner": "alliancebanner1"
+      }
+    }
+  ]
+}
