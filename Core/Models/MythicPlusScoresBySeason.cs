@@ -5,8 +5,10 @@ public class MythicPlusScoresBySeason
 {
     [JsonPropertyName("season")]
     public string Season { get; set; }
+    
     [JsonPropertyName("scores")]
-    public Scores Scores { get; set; }
+    public Dictionary<string, float> Scores { get; set; } 
+    
     [JsonPropertyName("segments")]
-    public Segments Segments { get; set; }
+    public Dictionary<string, MythicPlusSegment>? Segments { get; set; }
 }

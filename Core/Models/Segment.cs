@@ -1,10 +1,11 @@
 using System.Text.Json.Serialization;
 namespace RioPulse.Models;
 
-public class Segment
+public class MythicPlusSegment
 {
     [JsonPropertyName("score")]
-    public double Score { get; set; }
+    public float Score { get; set; }
+
     [JsonPropertyName("color")]
     public string Color { get; set; }
 }

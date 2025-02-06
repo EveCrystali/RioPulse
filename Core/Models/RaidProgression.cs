@@ -6,16 +6,22 @@ namespace RioPulse.Models;
 public class RaidProgression
 {
     public string RaidName { get; set; }
+    
     [JsonPropertyName("summary")]
     public string Summary { get; set; }
+    
     [JsonPropertyName("expansion_id")]
     public string ExpansionId { get; set; }
+
     [JsonPropertyName("total_bosses")]
-    public string TotalBosses { get; set; }
+    public int TotalBosses { get; set; } = 0;
+
     [JsonPropertyName("normal_bosses_killed")]
-    public string NormalBossesKilled { get; set; }
+    public int NormalBossesKilled { get; set; } = 0;
+
     [JsonPropertyName("heroic_bosses_killed")]
-    public string HeroicBossesKilled { get; set; }
+    public int HeroicBossesKilled { get; set; } = 0;
+
     [JsonPropertyName("mythic_bosses_killed")]
-    public string MythicBossesKilled { get; set; }
+    public int MythicBossesKilled { get; set; } = 0;
 }
