@@ -15,7 +15,7 @@ public class CharacterDeserializationTests
     public async Task Character_Deserialization_ShouldWork()
     {
         // Arrange
-        string json = await LoadJsonTestFile("TestData/Example_Api_Characters_Profile.json");
+        string json = await LoadJsonTestFile("J:/CSharp/RioPulse/Example_Api_Characters_Profile.txt");
 
         // Act
         Character? character = JsonSerializer.Deserialize<Character>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
