@@ -1,34 +1,51 @@
 using System.Text.Json;
+using RioPulse.Models;
 namespace RioPulse.Services;
 
 public class RaiderIoService
 {
     private readonly HttpClient _httpClient;
 
-    public RaiderIoService()
+    public RaiderIoService(HttpClient httpClient)
     {
-        _httpClient = new HttpClient();
+        _httpClient = httpClient;
         _httpClient.BaseAddress = new Uri("https://raider.io/api/v1/");
     }
 
-    public async Task<CharacterData> GetCharacterDataAsync(string realm, string name, string region)
+    public async Task<Character?> GetCharacterDataAsync(string realm, string name, string region)
     {
-        HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores");
-        response.EnsureSuccessStatusCode();
+        try
+        {
+            HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores");
 
-        string json = await response.Content.ReadAsStringAsync();
-        return JsonSerializer.Deserialize<CharacterData>(json);
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"Error during API request : {response.StatusCode}");
+                return null;
+            }
+
+            string json = await response.Content.ReadAsStringAsync();
+            return JsonSerializer.Deserialize<Character>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception during API request : {ex.Message}");
+            return null;
+        }
     }
-}
+    
+    public async Task SaveCharacterDataAsync(Character character, string filePath)
+    {
+        string json = JsonSerializer.Serialize(character, new JsonSerializerOptions { WriteIndented = true });
+        await File.WriteAllTextAsync(filePath, json);
+    }
 
-public class CharacterData
-{
-    public string Name { get; set; }
-    public string Realm { get; set; }
-    public MythicPlusScores MythicPlusScores { get; set; }
-}
+    public async Task<Character?> LoadCharacterDataAsync(string filePath)
+    {
+        if (!File.Exists(filePath)) return null;
 
-public class MythicPlusScores
-{
-    public double All { get; set; }
+        string json = await File.ReadAllTextAsync(filePath);
+        return JsonSerializer.Deserialize<Character>(json);
+    }
+
 }

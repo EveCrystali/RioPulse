@@ -61,12 +61,13 @@
 
 	<ItemGroup>
 		<PackageReference Include="Avalonia" Version="11.2.3" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="9.0.1" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Core\" />
+	  <Folder Include="Core\DTO\" />
 	  <Folder Include="Data\" />
 	  <Folder Include="UI\Converters\" />
 	  <Folder Include="UI\ViewModels\" />

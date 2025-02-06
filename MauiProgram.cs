@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Http;
+using RioPulse.Services;
 
 namespace RioPulse
 {
@@ -6,7 +9,8 @@ namespace RioPulse
     {
         public static MauiApp CreateMauiApp()
         {
-            var builder = MauiApp.CreateBuilder();
+            MauiAppBuilder builder = MauiApp.CreateBuilder();
+
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
@@ -14,9 +18,16 @@ namespace RioPulse
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder
+                .Services.AddLogging()
+                .AddHttpClient<RaiderIoService>(client =>
+                {
+                    client.BaseAddress = new Uri("https://raider.io/api/v1/");
+                });
+                
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+    		builder.Logging.SetMinimumLevel(LogLevel.Debug);
 #endif
 
             return builder.Build();
