@@ -1,8 +1,5 @@
 using System.Text.Json;
-using Xunit;
-using RioPulse.Models;
-using System.IO;
-using System.Threading.Tasks;
+using RioPulse.Core.Models;
 
 public class CharacterDeserializationTests
 {
@@ -18,7 +15,10 @@ public class CharacterDeserializationTests
         string json = await LoadJsonTestFile("J:/CSharp/RioPulse/Example_Api_Characters_Profile.txt");
 
         // Act
-        Character? character = JsonSerializer.Deserialize<Character>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        Character? character = JsonSerializer.Deserialize<Character>(json, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        });
 
         // Assert
         Assert.NotNull(character);

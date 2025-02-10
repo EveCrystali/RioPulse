@@ -1,5 +1,5 @@
 using System.Text.Json.Serialization;
-namespace RioPulse.Models;
+namespace RioPulse.Core.Models;
 
 public class MythicPlusSegment
 {

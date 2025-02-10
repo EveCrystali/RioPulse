@@ -1,6 +1,6 @@
 using System.Text.Json;
-using RioPulse.Models;
-namespace RioPulse.Services;
+using RioPulse.Core.Models;
+namespace RioPulse.Core.Services;
 
 public class RaiderIoService
 {
@@ -25,7 +25,10 @@ public class RaiderIoService
             }
 
             string json = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<Character>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            return JsonSerializer.Deserialize<Character>(json, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
         }
         catch (Exception ex)
         {
@@ -33,10 +36,13 @@ public class RaiderIoService
             return null;
         }
     }
-    
+
     public async Task SaveCharacterDataAsync(Character character, string filePath)
     {
-        string json = JsonSerializer.Serialize(character, new JsonSerializerOptions { WriteIndented = true });
+        string json = JsonSerializer.Serialize(character, new JsonSerializerOptions
+        {
+            WriteIndented = true
+        });
         await File.WriteAllTextAsync(filePath, json);
     }
 
@@ -47,5 +53,4 @@ public class RaiderIoService
         string json = await File.ReadAllTextAsync(filePath);
         return JsonSerializer.Deserialize<Character>(json);
     }
-
 }

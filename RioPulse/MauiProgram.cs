@@ -1,8 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Http;
-using RioPulse.Services;
-
+using RioPulse.Core.Services;
 namespace RioPulse
 {
     public static class MauiProgram
@@ -24,10 +21,10 @@ namespace RioPulse
                 {
                     client.BaseAddress = new Uri("https://raider.io/api/v1/");
                 });
-                
+
 
 #if DEBUG
-    		builder.Logging.SetMinimumLevel(LogLevel.Debug);
+            builder.Logging.SetMinimumLevel(LogLevel.Debug);
 #endif
 
             return builder.Build();

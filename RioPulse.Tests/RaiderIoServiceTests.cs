@@ -1,17 +1,14 @@
 using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
+using System.Text.Json;
 using Moq;
 using Moq.Protected;
-using Xunit;
-using RioPulse.Services;
-using RioPulse.Models;
-using System.Text.Json;
+using RioPulse.Core.Models;
+using RioPulse.Core.Services;
 
 public class RaiderIoServiceTests
 {
-    private readonly Mock<HttpMessageHandler> _httpMessageHandlerMock;
     private readonly HttpClient _httpClient;
+    private readonly Mock<HttpMessageHandler> _httpMessageHandlerMock;
     private readonly RaiderIoService _raiderIoService;
 
     public RaiderIoServiceTests()
@@ -45,10 +42,10 @@ public class RaiderIoServiceTests
         _httpMessageHandlerMock
             .Protected()
             .Setup<Task<HttpResponseMessage>>(
-                "SendAsync",
-                ItExpr.IsAny<HttpRequestMessage>(),
-                ItExpr.IsAny<CancellationToken>()
-            )
+                                              "SendAsync",
+                                              ItExpr.IsAny<HttpRequestMessage>(),
+                                              ItExpr.IsAny<CancellationToken>()
+                                             )
             .ReturnsAsync(new HttpResponseMessage
             {
                 StatusCode = HttpStatusCode.OK,
@@ -72,10 +69,10 @@ public class RaiderIoServiceTests
         _httpMessageHandlerMock
             .Protected()
             .Setup<Task<HttpResponseMessage>>(
-                "SendAsync",
-                ItExpr.IsAny<HttpRequestMessage>(),
-                ItExpr.IsAny<CancellationToken>()
-            )
+                                              "SendAsync",
+                                              ItExpr.IsAny<HttpRequestMessage>(),
+                                              ItExpr.IsAny<CancellationToken>()
+                                             )
             .ReturnsAsync(new HttpResponseMessage
             {
                 StatusCode = HttpStatusCode.NotFound
