@@ -37,6 +37,34 @@ public class RaiderIoService
         }
     }
 
+    public async Task<Guild?> GetGuildDetailsAsync(string region, string realm, string guildName)
+    {
+        try
+        {
+            // Construire l'URL avec les paramètres requis
+            HttpResponseMessage response = await _httpClient.GetAsync(
+                                                                      $"guilds/profile?region={region}&realm={realm}&name={guildName}&fields=members,raid_progression,raid_rankings");
+
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"Erreur lors de la requête API : {response.StatusCode}");
+                return null;
+            }
+
+            // Désérialiser la réponse JSON en un objet Guild
+            string json = await response.Content.ReadAsStringAsync();
+            return JsonSerializer.Deserialize<Guild>(json, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception lors de la requête API : {ex.Message}");
+            return null;
+        }
+    }
+
     public async Task SaveCharacterDataAsync(Character character, string filePath)
     {
         string json = JsonSerializer.Serialize(character, new JsonSerializerOptions

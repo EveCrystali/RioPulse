@@ -1,0 +1,20 @@
+{
+  "name": "Aubemoinemop",
+  "race": "Pandaren",
+  "class": "Monk",
+  "active_spec_name": "Brewmaster",
+  "active_spec_role": "TANK",
+  "gender": "male",
+  "faction": "alliance",
+  "achievement_points": 10445,
+  "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/dalaran/199/190116295-avatar.jpg?alt=/wow/static/images/2d/avatar/25-0.jpg",
+  "region": "eu",
+  "realm": "Dalaran",
+  "last_crawled_at": "2025-02-13T13:23:15.000Z",
+  "profile_url": "https://raider.io/characters/eu/dalaran/Aubemoinemop",
+  "profile_banner": "alliancebanner1",
+  "guild": {
+    "name": "Et pourquoi pas",
+    "realm": "Dalaran"
+  }
+}

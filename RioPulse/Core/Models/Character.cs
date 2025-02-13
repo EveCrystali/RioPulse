@@ -52,8 +52,11 @@ public class Character
     public Gear? Gear { get; set; }
 
     [JsonPropertyName("raid_progression")]
-    public Dictionary<string, RaidProgression> RaidProgression { get; set; }
+    public Dictionary<string, RaidProgression>? RaidProgression { get; set; }
 
     [JsonPropertyName("mythic_plus_scores_by_season")]
     public List<MythicPlusScoresBySeason>? MythicPlusScoresBySeason { get; set; }
+
+    [JsonPropertyName("guild")]
+    public Guild? Guild { get; set; }
 }

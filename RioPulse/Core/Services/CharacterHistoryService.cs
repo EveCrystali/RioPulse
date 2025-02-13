@@ -26,6 +26,16 @@ public class CharacterHistoryService
         await SaveJsonAsync(snapshot, snapshotPath);
     }
 
+    public async Task SaveExtendedSnapshot(ExtendedCharacterSnapshot snapshot)
+    {
+        // Générer le chemin pour sauvegarder le snapshot
+        string snapshotPath = GetSnapshotPath(snapshot.Character.Name, snapshot.Timestamp);
+
+        // Sauvegarder les données au format JSON
+        await SaveJsonAsync(snapshot, snapshotPath);
+    }
+
+
     public async Task<List<CharacterSnapshot>> GetCharacterHistory(string characterName)
     {
         string characterPath = Path.Combine(_baseStoragePath, characterName);
