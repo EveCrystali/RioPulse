@@ -47,14 +47,24 @@ public partial class MainPage : ContentPage
         CharacterNameLabel.Text = character.Name;
         CharacterRealmLabel.Text = $"Realm: {character.Realm}";
         CharacterRegionLabel.Text = $"Region: {character.Region}";
-        CharacterScoreLabel.Text = $"Score: {character.MythicPlusScoresBySeason.Last().Scores.All}";
-        CharacterHistoryCollectionView.ItemsSource = history;
+        if (character != null && character.MythicPlusScoresBySeason[0] != null && character.MythicPlusScoresBySeason[0].Scores != null && character.MythicPlusScoresBySeason[0].Scores.Count > 0)
+        {
+            // Assuming you want the score from the first season
+            double score = character.MythicPlusScoresBySeason[0].Scores["all"];
+            CharacterScoreLabel.Text = $"Score: {score}";
+        }
+        else
+        {
+            CharacterScoreLabel.Text = "Score: No Mythic+ data found.";
+        }
+
+        // CharacterHistoryCollectionView.ItemsSource = history;
 
         CharacterNameLabel.IsVisible = true;
         CharacterRealmLabel.IsVisible = true;
         CharacterRegionLabel.IsVisible = true;
         CharacterScoreLabel.IsVisible = true;
-        CharacterHistoryCollectionView.IsVisible = true;
+        // CharacterHistoryCollectionView.IsVisible = true;
     }
 
 

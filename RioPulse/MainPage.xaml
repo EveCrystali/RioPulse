@@ -22,7 +22,7 @@
             <Label x:Name="CharacterRegionLabel" IsVisible="False" />
             <Label x:Name="CharacterScoreLabel" IsVisible="False" />
 
-            <Label Text="Character History" Style="{StaticResource SubHeadline}" IsVisible="False"/>
+            <!-- <Label Text="Character History" Style="{StaticResource SubHeadline}" IsVisible="False"/>
             <CollectionView x:Name="CharacterHistoryCollectionView" IsVisible="False">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -36,7 +36,7 @@
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
-            </CollectionView>
+            </CollectionView> -->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
