@@ -366,3 +366,4 @@ FodyWeavers.xsd
 
 # Local database
 Data/
+/RioPulse/appsettings.json
