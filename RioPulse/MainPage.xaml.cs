@@ -44,63 +44,36 @@ public partial class MainPage : ContentPage
 
     private void UpdateUI(ExtendedCharacterSnapshot? characterAndGuildData)
     {
-        if (characterAndGuildData == null)
-        {
-            // Handle null data
-            CharacterScoreLabel.Text = "No data found.";
-            return;
-        }
+        CharacterDataFrame.IsVisible = characterAndGuildData != null;
+        GuildMembersFrame.IsVisible = characterAndGuildData != null && characterAndGuildData.GuildMembers?.Count > 0;
 
-        CharacterNameLabel.Text = characterAndGuildData.Character.Name;
-        CharacterRealmLabel.Text = $"Realm: {characterAndGuildData.Character.Realm}";
-        CharacterRegionLabel.Text = $"Region: {characterAndGuildData.Character.Region}";
-
-        // Display Mythic+ Score
-        if (characterAndGuildData.Character.MythicPlusScoresBySeason != null && characterAndGuildData.Character.MythicPlusScoresBySeason[0].Scores["all"] != null && characterAndGuildData.Character.MythicPlusScoresBySeason[0].Scores["all"] > 0)
+        if (characterAndGuildData != null)
         {
-            float score = characterAndGuildData.Character.MythicPlusScoresBySeason[0].Scores["all"];
+            CharacterNameLabel.Text = characterAndGuildData.Character.Name;
+            CharacterRealmLabel.Text = $"Realm: {characterAndGuildData.Character.Realm}";
+            CharacterRegionLabel.Text = $"Region: {characterAndGuildData.Character.Region}";
+
+            // Display Mythic+ Score (Improved)
+            double score = characterAndGuildData.Character.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
             CharacterScoreLabel.Text = $"Score: {score}";
+
+
+            GuildMembersTableView.Root.Clear(); // Clear previous data
+            foreach (Character guildmate in characterAndGuildData.GuildMembers
+             .Where(g => g.MythicPlusScoresBySeason?.Count > 0 && g.MythicPlusScoresBySeason[0].Scores.ContainsKey("all") && g.MythicPlusScoresBySeason[0].Scores["all"] > 0)
+             .OrderByDescending(g => g.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0))
+            {
+                double guildmateScore = guildmate.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
+                GuildMembersTableView.Root.Add(new TableSection
+                {
+                    new TextCell { Text = guildmate.Name, Detail = $"Score: {guildmateScore}" }
+                });
+            }
+
         }
         else
         {
-            CharacterScoreLabel.Text = "Score: No Mythic+ data found.";
+            CharacterScoreLabel.Text = "No data found.";
         }
-
-        // Display Guildmates' scores (assuming guildmates are sorted by score)
-        TableView tableView = new TableView();
-        foreach (Character guildmate in characterAndGuildData.GuildMembers)
-        {
-            if (guildmate.MythicPlusScoresBySeason != null && guildmate.MythicPlusScoresBySeason[0].Scores["all"] != null && guildmate.MythicPlusScoresBySeason[0].Scores["all"] > 0)
-            {
-                double guildmateScore = guildmate.MythicPlusScoresBySeason[0].Scores["all"];
-                tableView.Root.Add(new TableSection { new TextCell { Text = $"{guildmate.Name}", Detail = $"Score: {guildmateScore}" } });
-            }
-        }
-
-        // ...other code...
-        Character[] sortedGuildmates = characterAndGuildData.GuildMembers
-            .OrderByDescending(g => g.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0) // handles nulls
-            .ToArray();
-
-        foreach (Character guildmate in sortedGuildmates)
-        {
-            // ...rest of your foreach loop...
-        }
-        // ...rest of your UpdateUI function...
-
-
-        // Add the TableView to your UI
-        // You'll need to replace this with the appropriate layout and add tableView to your existing layout
-        var layout = new VerticalStackLayout { tableView };
-        Content = layout;
-
-        CharacterNameLabel.IsVisible = true;
-        CharacterRealmLabel.IsVisible = true;
-        CharacterRegionLabel.IsVisible = true;
-        CharacterScoreLabel.IsVisible = true;
     }
-
-
-
-
 }

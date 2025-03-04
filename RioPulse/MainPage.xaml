@@ -8,35 +8,30 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="FillAndExpand">
-                
+
             <Label Text="Search for a character" Style="{StaticResource Headline}" />
 
             <Entry x:Name="RegionEntry" Placeholder="Region" />
             <Entry x:Name="RealmEntry" Placeholder="Realm" />
             <Entry x:Name="CharacterNameEntry" Placeholder="Character Name" />
-            
+
             <Button x:Name="SearchButton" Text="Search" Clicked="SearchButton_Clicked" />
 
-            <Label x:Name="CharacterNameLabel" Style="{StaticResource Headline}" IsVisible="False" />
-            <Label x:Name="CharacterRealmLabel" IsVisible="False" />
-            <Label x:Name="CharacterRegionLabel" IsVisible="False" />
-            <Label x:Name="CharacterScoreLabel" IsVisible="False" />
+            <Frame HasShadow="True" Padding="20" IsVisible="False" x:Name="CharacterDataFrame">
+                <VerticalStackLayout Spacing="10">
+                    <Label x:Name="CharacterNameLabel" Style="{StaticResource SubHeadline}" />
+                    <Label x:Name="CharacterRealmLabel" />
+                    <Label x:Name="CharacterRegionLabel" />
+                    <Label x:Name="CharacterScoreLabel" />
+                </VerticalStackLayout>
+            </Frame>
 
-            <!-- <Label Text="Character History" Style="{StaticResource SubHeadline}" IsVisible="False"/>
-            <CollectionView x:Name="CharacterHistoryCollectionView" IsVisible="False">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Padding="10">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Label Text="{Binding Timestamp}" Grid.Column="0"/>
-                            <Label Text="{Binding Character.MythicPlusScores.All}" Grid.Column="1"/>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView> -->
+
+            <Frame HasShadow="True" Padding="20" IsVisible="False" x:Name="GuildMembersFrame">
+                <Label Text="Guild Members" Style="{StaticResource SubHeadline}" HorizontalOptions="Center"/>
+                <TableView x:Name="GuildMembersTableView" Intent="Form" RowHeight="44"/>
+            </Frame>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

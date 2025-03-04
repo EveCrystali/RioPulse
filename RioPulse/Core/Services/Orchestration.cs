@@ -55,12 +55,12 @@ public class CharacterOrchestrator
 
         Character?[] results = await Task.WhenAll(tasks);
 
-        foreach (Character? members in results)
+        foreach (Character? member in results)
         {
-            if (members != null && character.MythicPlusScoresBySeason[0].Scores["all"] > 0)
+            if (member != null || member?.MythicPlusScoresBySeason?[0]?.Scores["all"] > 0)
             {
-                enrichedGuildMembers.Add(members);
-                _characterHistoryService.SaveCharacterSnapshot(members);
+                enrichedGuildMembers.Add(member);
+                await _characterHistoryService.SaveCharacterSnapshot(member);
             }
         }
 
