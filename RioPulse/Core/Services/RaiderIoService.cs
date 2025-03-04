@@ -12,7 +12,7 @@ public class RaiderIoService
         _httpClient.BaseAddress = new Uri("https://raider.io/api/v1/");
     }
 
-    public async Task<Character?> GetCharacterDataAsync(string realm, string name, string region)
+    public async Task<Character?> GetCharacterDataAsync(string region, string realm, string name)
     {
         try
         {

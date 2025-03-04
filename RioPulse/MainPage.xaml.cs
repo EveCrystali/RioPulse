@@ -2,7 +2,7 @@
 using RioPulse.Core.Services;
 namespace RioPulse;
 
-public class MainPage : ContentPage
+public partial class  MainPage : ContentPage
 {
     private readonly CharacterHistoryService _historyService;
     private readonly HttpClient _httpClient;
@@ -16,12 +16,12 @@ public class MainPage : ContentPage
         _raiderIoService = new RaiderIoService(_httpClient);
     }
 
-    private async Task UpdateCharacterData(string characterName)
+    private async Task UpdateCharacterData(string region, string realm, string characterName)
     {
         try
         {
             // Récupération des données via l'API
-            var character = await _raiderIoService.GetCharacterData(characterName);
+            var character = await _raiderIoService.GetCharacterDataAsync(region, realm, characterName);
 
             // Sauvegarde du snapshot
             await _historyService.SaveCharacterSnapshot(character);
