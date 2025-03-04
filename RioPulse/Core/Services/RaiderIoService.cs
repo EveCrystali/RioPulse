@@ -7,19 +7,23 @@ public class RaiderIoService
 {
     private readonly HttpClient _httpClient;
 
+    private readonly string _apiKey;
+
     public RaiderIoService(HttpClient httpClient, IConfiguration configuration)
     {
         _httpClient = httpClient;
         _httpClient.BaseAddress = new Uri(configuration["RaiderIoApi:BaseAddress"]);
+        _apiKey = configuration["RaiderIoApi:ApiKey"];
     }
 
     public async Task<Character?> GetCharacterDataAsync(string region, string realm, string name)
     {
+        Console.WriteLine($"GetCharacterDataAsync({region}, {realm}, {name})");
         try
         {
-            // HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores");
-            HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores_by_season:season-tww-1" );
-            // HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores_by_season:current" );
+            // HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?access_key={_apiKey}&region={region}&realm={realm}&name={name}&fields=mythic_plus_scores,guild");
+            HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores_by_season:season-tww-1,guild" );
+            // HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores_by_season:current,guild" );
 
 
             if (!response.IsSuccessStatusCode)
@@ -43,11 +47,12 @@ public class RaiderIoService
 
     public async Task<Guild?> GetGuildDetailsAsync(string region, string realm, string guildName)
     {
+        Console.WriteLine($"GetGuildDetailsAsync({region}, {realm}, {guildName})");
         try
         {
             // Construire l'URL avec les paramètres requis
             HttpResponseMessage response = await _httpClient.GetAsync(
-                                                                      $"guilds/profile?region={region}&realm={realm}&name={guildName}&fields=members,raid_progression,raid_rankings");
+                                                                      $"guilds/profile?access_key={_apiKey}&region={region}&realm={realm}&name={guildName}&fields=members");
 
             if (!response.IsSuccessStatusCode)
             {

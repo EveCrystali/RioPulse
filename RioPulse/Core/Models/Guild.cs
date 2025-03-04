@@ -28,5 +28,5 @@ public class Guild
     public Dictionary<string, RaidProgression>? RaidProgression { get; set; }
 
     [JsonPropertyName("members")]
-    public List<Character>? Members { get; set; }
+    public List<GuildMember>? GuildMembers { get; set; }
 }

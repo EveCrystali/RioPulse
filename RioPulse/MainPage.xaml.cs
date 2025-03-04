@@ -7,11 +7,13 @@ public partial class MainPage : ContentPage
     private readonly CharacterHistoryService _historyService;
     private readonly RaiderIoService _raiderIoService;
 
+    private readonly CharacterOrchestrator _orchestrator;
     public MainPage(CharacterHistoryService historyService, RaiderIoService raiderIoService)
     {
         InitializeComponent();
         _historyService = historyService;
         _raiderIoService = raiderIoService;
+        _orchestrator = new CharacterOrchestrator(_raiderIoService, _historyService);
     }
 
     private async void SearchButton_Clicked(object sender, EventArgs e)
@@ -23,17 +25,14 @@ public partial class MainPage : ContentPage
     {
         try
         {
-            // Retrieving data via the API
-            Character? character = await _raiderIoService.GetCharacterDataAsync(region, realm, characterName);
+            //Get Character and Guild data
+            ExtendedCharacterSnapshot? characterAndGuildData = await _orchestrator.UpdateCharacterAndGuildSnapshotAsync(region, realm, characterName);
 
-            // Saving the snapshot
-            await _historyService.SaveCharacterSnapshot(character);
+            // Save the snapshot
+            await _historyService.SaveCharacterSnapshot(characterAndGuildData?.Character); // Save character only
 
-            // Retrieving history for display/analysis
-            List<CharacterSnapshot> history = await _historyService.GetCharacterHistory(characterName);
-
-            // TODO: Use the history to update the UI
-            UpdateUI(character, history);
+            // Update UI - you'll need to modify this considerably
+            UpdateUI(characterAndGuildData);
 
         }
         catch (Exception ex)
@@ -42,15 +41,24 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void UpdateUI(Character character, List<CharacterSnapshot> history)
+
+    private void UpdateUI(ExtendedCharacterSnapshot? characterAndGuildData)
     {
-        CharacterNameLabel.Text = character.Name;
-        CharacterRealmLabel.Text = $"Realm: {character.Realm}";
-        CharacterRegionLabel.Text = $"Region: {character.Region}";
-        if (character != null && character.MythicPlusScoresBySeason[0] != null && character.MythicPlusScoresBySeason[0].Scores != null && character.MythicPlusScoresBySeason[0].Scores.Count > 0)
+        if (characterAndGuildData == null)
         {
-            // Assuming you want the score from the first season
-            double score = character.MythicPlusScoresBySeason[0].Scores["all"];
+            // Handle null data
+            CharacterScoreLabel.Text = "No data found.";
+            return;
+        }
+
+        CharacterNameLabel.Text = characterAndGuildData.Character.Name;
+        CharacterRealmLabel.Text = $"Realm: {characterAndGuildData.Character.Realm}";
+        CharacterRegionLabel.Text = $"Region: {characterAndGuildData.Character.Region}";
+
+        // Display Mythic+ Score
+        if (characterAndGuildData.Character.MythicPlusScoresBySeason != null && characterAndGuildData.Character.MythicPlusScoresBySeason[0].Scores["all"] != null && characterAndGuildData.Character.MythicPlusScoresBySeason[0].Scores["all"] > 0)
+        {
+            float score = characterAndGuildData.Character.MythicPlusScoresBySeason[0].Scores["all"];
             CharacterScoreLabel.Text = $"Score: {score}";
         }
         else
@@ -58,14 +66,40 @@ public partial class MainPage : ContentPage
             CharacterScoreLabel.Text = "Score: No Mythic+ data found.";
         }
 
-        // CharacterHistoryCollectionView.ItemsSource = history;
+        // Display Guildmates' scores (assuming guildmates are sorted by score)
+        TableView tableView = new TableView();
+        foreach (Character guildmate in characterAndGuildData.GuildMembers)
+        {
+            if (guildmate.MythicPlusScoresBySeason != null && guildmate.MythicPlusScoresBySeason[0].Scores["all"] != null && guildmate.MythicPlusScoresBySeason[0].Scores["all"] > 0)
+            {
+                double guildmateScore = guildmate.MythicPlusScoresBySeason[0].Scores["all"];
+                tableView.Root.Add(new TableSection { new TextCell { Text = $"{guildmate.Name}", Detail = $"Score: {guildmateScore}" } });
+            }
+        }
+
+        // ...other code...
+        Character[] sortedGuildmates = characterAndGuildData.GuildMembers
+            .OrderByDescending(g => g.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0) // handles nulls
+            .ToArray();
+
+        foreach (Character guildmate in sortedGuildmates)
+        {
+            // ...rest of your foreach loop...
+        }
+        // ...rest of your UpdateUI function...
+
+
+        // Add the TableView to your UI
+        // You'll need to replace this with the appropriate layout and add tableView to your existing layout
+        var layout = new VerticalStackLayout { tableView };
+        Content = layout;
 
         CharacterNameLabel.IsVisible = true;
         CharacterRealmLabel.IsVisible = true;
         CharacterRegionLabel.IsVisible = true;
         CharacterScoreLabel.IsVisible = true;
-        // CharacterHistoryCollectionView.IsVisible = true;
     }
+
 
 
 
