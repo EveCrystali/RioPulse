@@ -1,6 +1,6 @@
 using RioPulse.Core.Models;
-using RioPulse.Core.Services;
-namespace RioPulse.Orchestration;
+
+namespace RioPulse.Core.Services;
 
 // Cette classe orchestre l'appel à RaiderIoService et CharacterHistoryService.
 public class CharacterOrchestrator

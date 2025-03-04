@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using RioPulse.Core.Services;
+
 namespace RioPulse
 {
     public static class MauiProgram
@@ -26,8 +27,8 @@ namespace RioPulse
                 .AddHttpClient<RaiderIoService>(client =>
                 {
                     client.BaseAddress = new Uri(configuration["RaiderIoApi:BaseAddress"]);
-                }); 
-            
+                });
+
             //Add new services
             builder.Services.AddSingleton<CharacterHistoryService>(provider =>
             {
@@ -38,7 +39,7 @@ namespace RioPulse
                 if (string.IsNullOrEmpty(baseStoragePath))
                 {
                     // Default path if not configured in appsettings.json
-                    baseStoragePath = "./data/characters"; 
+                    baseStoragePath = "./data/characters";
                 }
                 //Create the directory if it doesn't exist
                 Directory.CreateDirectory(baseStoragePath);
