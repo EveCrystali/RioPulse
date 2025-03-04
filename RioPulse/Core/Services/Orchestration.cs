@@ -48,25 +48,21 @@ public class CharacterOrchestrator
         // Liste pour stocker les données enrichies des membres de la guilde
         List<Character> enrichedGuildMembers = new();
 
-        // Boucle sur chaque membre de la guilde pour récupérer leurs données détaillées
-        Parallel.ForEach(guildDetails.GuildMembers, guildMember =>
-        {
-            Console.WriteLine($"Récupération des données de {guildMember.Character.Name}");
-            Character? memberData = _raiderIoService.GetCharacterDataAsync(guildMember.Character.Region,
-                                                                            guildMember.Character.Realm,
-                                                                            guildMember.Character.Name).Result; 
-            if (memberData != null)
-            {
-                lock (enrichedGuildMembers) {  //Use a lock to prevent race conditions
-                    enrichedGuildMembers.Add(memberData);
-                }
-            }
-            else
-            {
-                Console.WriteLine($"Impossible de récupérer les données pour le membre {guildMember.Character.Name}.");
-            }
-        });
+        Task<Character?>[] tasks = guildDetails.GuildMembers.Select(guildMember =>
+                                                _raiderIoService.GetCharacterDataAsync(guildMember.Character.Region,
+                                                                                        guildMember.Character.Realm,
+                                                                                        guildMember.Character.Name)).ToArray();
 
+        Character?[] results = await Task.WhenAll(tasks);
+
+        foreach (Character? members in results)
+        {
+            if (members != null && character.MythicPlusScoresBySeason[0].Scores["all"] > 0)
+            {
+                enrichedGuildMembers.Add(members);
+                _characterHistoryService.SaveCharacterSnapshot(members);
+            }
+        }
 
         // Créer un snapshot étendu contenant le personnage principal et ses guild mates enrichis
         ExtendedCharacterSnapshot snapshot = new()
