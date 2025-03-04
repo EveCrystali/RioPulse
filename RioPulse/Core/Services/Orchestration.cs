@@ -18,7 +18,7 @@ public class CharacterOrchestrator
     public async Task UpdateCharacterAndGuildSnapshotAsync(string realm, string name, string region)
     {
         // Récupération des données du personnage principal
-        Character? character = await _raiderIoService.GetCharacterDataAsync(realm, name, region);
+        Character? character = await _raiderIoService.GetCharacterDataAsync(region, realm, name);
         if (character == null)
         {
             Console.WriteLine("Aucune donnée n'a été récupérée pour le personnage.");

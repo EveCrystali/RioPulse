@@ -5,18 +5,16 @@ namespace RioPulse;
 public partial class  MainPage : ContentPage
 {
     private readonly CharacterHistoryService _historyService;
-    private readonly HttpClient _httpClient;
     private readonly RaiderIoService _raiderIoService;
 
-    public MainPage()
+    public MainPage(CharacterHistoryService historyService, RaiderIoService raiderIoService)
     {
         InitializeComponent();
-        _historyService = new CharacterHistoryService("./data/characters");
-        _httpClient = new HttpClient();
-        _raiderIoService = new RaiderIoService(_httpClient);
+        _historyService = historyService;
+        _raiderIoService = raiderIoService;
     }
 
-    private async Task UpdateCharacterData(string region, string realm, string characterName)
+    private async Task UpdateCharacterDataAsync(string region, string realm, string characterName)
     {
         try
         {

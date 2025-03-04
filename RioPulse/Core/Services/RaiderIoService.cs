@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Microsoft.Extensions.Configuration;
 using RioPulse.Core.Models;
 namespace RioPulse.Core.Services;
 
@@ -6,10 +7,10 @@ public class RaiderIoService
 {
     private readonly HttpClient _httpClient;
 
-    public RaiderIoService(HttpClient httpClient)
+    public RaiderIoService(HttpClient httpClient, IConfiguration configuration)
     {
         _httpClient = httpClient;
-        _httpClient.BaseAddress = new Uri("https://raider.io/api/v1/");
+        _httpClient.BaseAddress = new Uri(configuration["RaiderIoApi:BaseAddress"]);
     }
 
     public async Task<Character?> GetCharacterDataAsync(string region, string realm, string name)
@@ -74,7 +75,7 @@ public class RaiderIoService
         await File.WriteAllTextAsync(filePath, json);
     }
 
-    public async Task<Character?> LoadCharacterDataAsync(string filePath)
+    public static async Task<Character?> LoadCharacterDataAsync(string filePath)
     {
         if (!File.Exists(filePath)) return null;
 

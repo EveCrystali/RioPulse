@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;
 using RioPulse.Core.Services;
 namespace RioPulse
 {
@@ -7,6 +8,11 @@ namespace RioPulse
         public static MauiApp CreateMauiApp()
         {
             MauiAppBuilder builder = MauiApp.CreateBuilder();
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build();
+            builder.Configuration.AddConfiguration(configuration);
+
 
             builder
                 .UseMauiApp<App>()
@@ -19,9 +25,27 @@ namespace RioPulse
                 .Services.AddLogging()
                 .AddHttpClient<RaiderIoService>(client =>
                 {
-                    client.BaseAddress = new Uri("https://raider.io/api/v1/");
-                });
+                    client.BaseAddress = new Uri(configuration["RaiderIoApi:BaseAddress"]);
+                }); 
+            
+            //Add new services
+            builder.Services.AddSingleton<CharacterHistoryService>(provider =>
+            {
+                //Get the base storage path from the configuration
+                string baseStoragePath = configuration["DataStorage:BaseStoragePath"];
 
+                //Check that the path exists, otherwise use a default path
+                if (string.IsNullOrEmpty(baseStoragePath))
+                {
+                    // Default path if not configured in appsettings.json
+                    baseStoragePath = "./data/characters"; 
+                }
+                //Create the directory if it doesn't exist
+                Directory.CreateDirectory(baseStoragePath);
+                return new CharacterHistoryService(baseStoragePath);
+            });
+            builder.Services.AddTransient<CharacterOrchestrator>();
+            builder.Services.AddTransient<MainPage>();
 
 #if DEBUG
             builder.Logging.SetMinimumLevel(LogLevel.Debug);
