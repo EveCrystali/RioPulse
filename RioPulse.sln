@@ -6,10 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RioPulse", "RioPulse\RioPulse.csproj", "{13EE3A55-7622-4999-92DD-A4241736DE51}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{944FE444-94A3-4216-B928-A6C8D5870979}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md,
-		LICENSE.txt = LICENSE.txt
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RioPulse.Tests", "RioPulse.Tests\RioPulse.Tests.csproj", "{C5159BE6-464F-437A-905E-6EAB327490BA}"
 EndProject
@@ -21,10 +17,10 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{13EE3A55-7622-4999-92DD-A4241736DE51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13EE3A55-7622-4999-92DD-A4241736DE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13EE3A55-7622-4999-92DD-A4241736DE51}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{13EE3A55-7622-4999-92DD-A4241736DE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13EE3A55-7622-4999-92DD-A4241736DE51}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C5159BE6-464F-437A-905E-6EAB327490BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5159BE6-464F-437A-905E-6EAB327490BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5159BE6-464F-437A-905E-6EAB327490BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5159BE6-464F-437A-905E-6EAB327490BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

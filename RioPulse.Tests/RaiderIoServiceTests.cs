@@ -1,5 +1,7 @@
 using System.Net;
 using System.Text.Json;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Moq.Protected;
 using RioPulse.Core.Models;
@@ -11,6 +13,18 @@ public class RaiderIoServiceTests
     private readonly Mock<HttpMessageHandler> _httpMessageHandlerMock;
     private readonly RaiderIoService _raiderIoService;
 
+    private IConfiguration _configuration;
+
+
+    private IConfiguration CreateConfiguration()
+    {
+        var configurationBuilder = new ConfigurationBuilder();
+        configurationBuilder.AddJsonFile("appsettings.test.json");
+        return configurationBuilder.Build();
+    }
+
+
+
     public RaiderIoServiceTests()
     {
         _httpMessageHandlerMock = new Mock<HttpMessageHandler>();
@@ -19,8 +33,9 @@ public class RaiderIoServiceTests
         {
             BaseAddress = new Uri("https://raider.io/api/v1/")
         };
-
-        _raiderIoService = new RaiderIoService(_httpClient);
+        _configuration = CreateConfiguration();
+        
+        _raiderIoService = new RaiderIoService(_httpClient, _configuration);
     }
 
     [Fact]
