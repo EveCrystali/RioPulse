@@ -18,7 +18,7 @@ public class RaiderIoServiceTests
 
     private IConfiguration CreateConfiguration()
     {
-        var configurationBuilder = new ConfigurationBuilder();
+        ConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
         configurationBuilder.AddJsonFile("appsettings.test.json");
         return configurationBuilder.Build();
     }
@@ -42,7 +42,7 @@ public class RaiderIoServiceTests
     public async Task GetCharacterDataAsync_ShouldReturnCharacter_WhenApiResponseIsValid()
     {
         // Arrange
-        var fakeCharacter = new Character
+        Character fakeCharacter = new Character
         {
             Name = "TestCharacter",
             Race = "Orc",
@@ -52,7 +52,7 @@ public class RaiderIoServiceTests
             ProfileUrl = "https://raider.io/characters/us/skullcrusher/TestCharacter"
         };
 
-        var jsonResponse = JsonSerializer.Serialize(fakeCharacter);
+        string jsonResponse = JsonSerializer.Serialize(fakeCharacter);
 
         _httpMessageHandlerMock
             .Protected()
@@ -68,7 +68,7 @@ public class RaiderIoServiceTests
             });
 
         // Act
-        var result = await _raiderIoService.GetCharacterDataAsync("Skullcrusher", "TestCharacter", "us");
+        Character? result = await _raiderIoService.GetCharacterDataAsync("Skullcrusher", "TestCharacter", "us");
 
         // Assert
         Assert.NotNull(result);
@@ -94,7 +94,7 @@ public class RaiderIoServiceTests
             });
 
         // Act
-        var result = await _raiderIoService.GetCharacterDataAsync("Skullcrusher", "UnknownCharacter", "us");
+        Character? result = await _raiderIoService.GetCharacterDataAsync("Skullcrusher", "UnknownCharacter", "us");
 
         // Assert
         Assert.Null(result);

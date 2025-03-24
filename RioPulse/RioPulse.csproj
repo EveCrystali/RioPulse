@@ -44,7 +44,6 @@
     <Folder Include="Core\DTO\" />
     <Folder Include="Data\" />
     <Folder Include="UI\Converters\" />
-    <Folder Include="UI\ViewModels\" />
     <Folder Include="UI\Views\" />
   </ItemGroup>
 

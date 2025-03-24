@@ -47,6 +47,8 @@ namespace RioPulse
             });
             builder.Services.AddTransient<CharacterOrchestrator>();
             builder.Services.AddTransient<MainPage>();
+            builder.Services.AddSingleton<CharacterAnalysisService>();
+
 
 #if DEBUG
             builder.Logging.SetMinimumLevel(LogLevel.Debug);
