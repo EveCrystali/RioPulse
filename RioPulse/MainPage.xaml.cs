@@ -1,5 +1,6 @@
 ﻿using RioPulse.Core.Models;
 using RioPulse.Core.Services;
+using RioPulse.UI.ViewModels;
 namespace RioPulse;
 
 public partial class MainPage : ContentPage
@@ -29,7 +30,7 @@ public partial class MainPage : ContentPage
             ExtendedCharacterSnapshot? characterAndGuildData = await _orchestrator.UpdateCharacterAndGuildSnapshotAsync(region, realm, characterName);
 
             // Save the snapshot
-            await _historyService.SaveCharacterSnapshot(characterAndGuildData?.Character); // Save character only
+            await _historyService.SaveCharacterSnapshot(characterAndGuildData?.Character); 
 
             // Update UI - you'll need to modify this considerably
             UpdateUI(characterAndGuildData);
@@ -49,31 +50,28 @@ public partial class MainPage : ContentPage
 
         if (characterAndGuildData != null)
         {
+            // Mise à jour des informations du personnage
             CharacterNameLabel.Text = characterAndGuildData.Character.Name;
-            CharacterRealmLabel.Text = $"Realm: {characterAndGuildData.Character.Realm}";
-            CharacterRegionLabel.Text = $"Region: {characterAndGuildData.Character.Region}";
 
-            // Display Mythic+ Score (Improved)
             double score = characterAndGuildData.Character.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
-            CharacterScoreLabel.Text = $"Score: {score}";
+            CharacterScoreLabel.Text = $"🏆 Score: {score:F1}";
 
-
-            GuildMembersTableView.Root.Clear(); // Clear previous data
-            foreach (Character guildmate in characterAndGuildData.GuildMembers
-             .Where(g => g.MythicPlusScoresBySeason?.Count > 0 && g.MythicPlusScoresBySeason[0].Scores.ContainsKey("all") && g.MythicPlusScoresBySeason[0].Scores["all"] > 0)
-             .OrderByDescending(g => g.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0))
-            {
-                double guildmateScore = guildmate.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
-                GuildMembersTableView.Root.Add(new TableSection
+            // Mise à jour des membres de la guilde
+            List<GuildMemberDisplay>? guildMembers = characterAndGuildData.GuildMembers?
+                .Where(g => g.MythicPlusScoresBySeason?.Count > 0 && g.MythicPlusScoresBySeason[0].Scores.ContainsKey("all"))
+                .Select(g => new GuildMemberDisplay
                 {
-                    new TextCell { Text = guildmate.Name, Detail = $"Score: {guildmateScore}" }
-                });
-            }
+                    Name = g.Name,
+                    Score = g.MythicPlusScoresBySeason[0].Scores["all"],
+                })
+                .OrderByDescending(g => g.Score)
+                .ToList();
 
+            GuildMembersCollection.ItemsSource = guildMembers;
         }
         else
         {
-            CharacterScoreLabel.Text = "No data found.";
+            CharacterScoreLabel.Text = "No data available.";
         }
     }
 }

@@ -3,35 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RioPulse.MainPage"
              Title="RioPulse">
+
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="FillAndExpand">
+        <VerticalStackLayout Spacing="20" Padding="20">
 
-            <Label Text="Search for a character" Style="{StaticResource Headline}" />
+            <!-- Character Search -->
+            <Label Text="Search for a Character" Style="{StaticResource Headline}" />
 
-            <Entry x:Name="RegionEntry" Placeholder="Region" />
-            <Entry x:Name="RealmEntry" Placeholder="Realm" />
+            <Entry x:Name="RegionEntry" Placeholder="Region (e.g., eu, us)" />
+            <Entry x:Name="RealmEntry" Placeholder="Realm (e.g., Archimonde, Kazzak)" />
             <Entry x:Name="CharacterNameEntry" Placeholder="Character Name" />
 
-            <Button x:Name="SearchButton" Text="Search" Clicked="SearchButton_Clicked" />
+            <Button x:Name="SearchButton" Text="🔎 Search" Clicked="SearchButton_Clicked" />
 
-            <Frame HasShadow="True" Padding="20" IsVisible="False" x:Name="CharacterDataFrame">
+            <!-- Character Information -->
+            <Frame HasShadow="True" Padding="20" IsVisible="False" x:Name="CharacterDataFrame"
+                   BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray800}}"
+                   CornerRadius="10">
                 <VerticalStackLayout Spacing="10">
-                    <Label x:Name="CharacterNameLabel" Style="{StaticResource SubHeadline}" />
-                    <Label x:Name="CharacterRealmLabel" />
-                    <Label x:Name="CharacterRegionLabel" />
-                    <Label x:Name="CharacterScoreLabel" />
+                    <Label x:Name="CharacterNameLabel" FontSize="22" FontAttributes="Bold" TextColor="DarkBlue"/>
+                    <Label x:Name="CharacterRealmLabel" FontSize="16"/>
+                    <Label x:Name="CharacterRegionLabel" FontSize="16"/>
+                    <Label x:Name="CharacterScoreLabel" FontSize="18" FontAttributes="Bold" TextColor="Green"/>
                 </VerticalStackLayout>
             </Frame>
 
-
-            <Frame HasShadow="True" Padding="20" IsVisible="False" x:Name="GuildMembersFrame">
-                <Label Text="Guild Members" Style="{StaticResource SubHeadline}" HorizontalOptions="Center"/>
-                <TableView x:Name="GuildMembersTableView" Intent="Form" RowHeight="44"/>
+            <!-- Guild Members -->
+            <Frame HasShadow="True" Padding="20" IsVisible="False" x:Name="GuildMembersFrame"
+                   BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}"
+                   CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Guild Members" Style="{StaticResource SubHeadline}" HorizontalOptions="Center"/>
+                    <CollectionView x:Name="GuildMembersCollection">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="10" ColumnDefinitions="Auto, *, Auto">
+                                    <Image Source="{Binding ClassIcon}" WidthRequest="24" HeightRequest="24"/>
+                                    <Label Text="{Binding Name}" FontSize="16" Grid.Column="1"/>
+                                    <Label Text="{Binding Score, StringFormat='🏆 {0:F0}'}" FontSize="16" TextColor="Green" Grid.Column="2"/>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
             </Frame>
 
         </VerticalStackLayout>
     </ScrollView>
+
 </ContentPage>
+
