@@ -26,13 +26,13 @@ public class CharacterHistoryService
         await SaveJsonAsync(snapshot, snapshotPath);
     }
 
-    public async Task SaveExtendedSnapshot(ExtendedCharacterSnapshot snapshot)
+    public async Task SaveExtendedSnapshot(ExtendedCharacterSnapshot extendedCharacterSnapshot)
     {
         // Générer le chemin pour sauvegarder le snapshot
-        string snapshotPath = GetSnapshotPath(snapshot.Character.Name, snapshot.Timestamp);
+        string extendedCharacterSnapshotPath = GetSnapshotPath(extendedCharacterSnapshot.Character.Name, extendedCharacterSnapshot.Timestamp);
 
         // Sauvegarder les données au format JSON
-        await SaveJsonAsync(snapshot, snapshotPath);
+        await SaveJsonAsync(extendedCharacterSnapshot, extendedCharacterSnapshotPath);
     }
 
 
@@ -69,7 +69,7 @@ public class CharacterHistoryService
         await File.WriteAllTextAsync(filePath, JsonSerializer.Serialize(data, options));
     }
 
-    private async Task<T?> LoadJsonAsync<T>(string filePath)
+    private static async Task<T?> LoadJsonAsync<T>(string filePath)
     {
         if (!File.Exists(filePath)) return default;
 

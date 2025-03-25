@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Concurrent;
 using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using RioPulse.Core.Models;
@@ -11,6 +12,9 @@ public class CharacterAnalysisService
     private readonly RaiderIoService _raiderIoService;
 
     private readonly string _dataPath;
+
+    private readonly ConcurrentDictionary<string, List<CharacterSnapshot>> _snapshotCache = new();
+
 
     public CharacterAnalysisService(RaiderIoService raiderIoService, CharacterHistoryService characterHistoryService)
     {
@@ -25,47 +29,81 @@ public class CharacterAnalysisService
 
     public async Task<CharacterStatistics> AnalyzeCharacterProgressionAsync(string characterName)
     {
+
+        if (string.IsNullOrWhiteSpace(characterName))
+            throw new ArgumentException("Nom de personnage invalide");
+
+        if (characterName.Any(c => !char.IsLetterOrDigit(c)))
+            throw new ArgumentException("Caractères spéciaux interdits");
+
+        if (!_snapshotCache.TryGetValue(characterName, out List<CharacterSnapshot>? snapshots))
+        {
+            snapshots = await _characterHistoryService.GetCharacterHistory(characterName);
+            _snapshotCache.TryAdd(characterName, snapshots);
+        }
+
         string[] characterFiles = Directory.GetFiles(Path.Combine(_dataPath, characterName), "*.json");
         CharacterStatistics statistics = new CharacterStatistics();
 
-        // Sort files by modification date (oldest first)
-        foreach (string? file in characterFiles.OrderBy(f => File.GetLastWriteTime(f)))
-        {
-            // load the snapshot 
-            Character? character = null;
-            try
-            {
-                if (file.Contains("Extended"))
-                {
-                    ExtendedCharacterSnapshot? extendedSnapshot = await LoadJsonAsync<ExtendedCharacterSnapshot>(file);
-                    if (extendedSnapshot != null)
-                    {
-                        character = extendedSnapshot.Character;
-                    }
-                }
-                else
-                {
-                    CharacterSnapshot? snapshot = await LoadJsonAsync<CharacterSnapshot>(file);
-                    if (snapshot != null)
-                    {
-                        character = snapshot.Character;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error loading or processing file {file}: {ex.Message}");
-                continue; // Passer au fichier suivant en cas d'erreur
-            }
+        if (!snapshots.Any())
+            return statistics;
 
-            if (character != null)
-            {
-                UpdateStatistics(statistics, character, file);
-            }
-        }
+        ProcessHistoricalData(snapshots, statistics);
+        CalculateMetrics(statistics);
 
         return statistics;
     }
+
+    private void ProcessHistoricalData(IEnumerable<CharacterSnapshot> snapshots, CharacterStatistics stats)
+    {
+        List<CharacterSnapshot> ordered = snapshots.OrderBy(s => s.Timestamp).ToList();
+
+        foreach (CharacterSnapshot? snapshot in ordered)
+        {
+            UpdateScoreHistory(snapshot, stats);
+            TrackGuildEvolution(snapshot, stats);
+            TrackDungeonBests(snapshot, stats);
+        }
+
+        stats.CurrentMythicPlusScore = ordered.Last().Character.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
+    }
+
+    private void CalculateMetrics(CharacterStatistics stats)
+    {
+        if (stats.ScoreHistory.Count < 2) return;
+
+        float[] scores = stats.ScoreHistory
+            .OrderBy(s => s.Timestamp)
+            .Select(s => s.Score)
+            .ToArray();
+
+        // Calcul de tendance linéaire
+        stats.ScoreEvolution = CalculateLinearTrend(scores);
+
+        // Détection des patterns
+        stats.WeeklyTrends = DetectWeeklyPatterns(scores);
+    }
+
+    private float CalculateLinearTrend(float[] scores)
+    {
+        float[] xValues = Enumerable.Range(0, scores.Length).Select(i => (float)i).ToArray();
+        float[] yValues = scores;
+
+        float meanX = xValues.Average();
+        float meanY = yValues.Average();
+
+        float numerator = 0;
+        float denominator = 0;
+
+        for (int i = 0; i < xValues.Length; i++)
+        {
+            numerator += (xValues[i] - meanX) * (yValues[i] - meanY);
+            denominator += (xValues[i] - meanX) * (xValues[i] - meanX);
+        }
+
+        return denominator == 0 ? 0 : numerator / denominator;
+    }
+
 
     private void UpdateStatistics(CharacterStatistics statistics, Character character, string filePath)
     {
@@ -103,6 +141,70 @@ public class CharacterAnalysisService
         }
     }
 
+    private void TrackGuildEvolution(CharacterSnapshot snapshot, CharacterStatistics stats)
+    {
+        if (snapshot.Character.Guild?.GuildMembers == null)
+            return;
+
+        float currentScore = snapshot.Character.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
+
+        var guildRank = snapshot.Character.Guild.GuildMembers
+            .OrderByDescending(m => m.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0)
+            .ToList()
+            .FindIndex(m => m.Name == snapshot.Character.Name) + 1;
+
+        stats.GuildRankHistory.Add(new GuildRankEntry
+        {
+            Timestamp = snapshot.Timestamp,
+            Rank = guildRank,
+            GuildMemberCount = snapshot.Character.Guild.GuildMembers.Count
+        });
+    }
+
+
+
+    private void CalculateScoreEvolution(CharacterStatistics statistics, Character character)
+    {
+        if (statistics.ScoreHistory.Count < 2)
+        {
+            statistics.ScoreEvolution = 0; // Not enough data to calculate evolution
+            return;
+        }
+
+        // Sort score history by timestamp
+        List<ScoreEntry> sortedScoreHistory = statistics.ScoreHistory.OrderBy(s => s.Timestamp).ToList();
+
+        IEnumerable<IGrouping<DateTime, ScoreEntry>> weeklyScores = sortedScoreHistory.GroupBy(s => GetStartOfWeek(s.Timestamp, character.Region.ToLower()));
+
+        // Calculate weekly score changes
+        List<float> weeklyScoreChanges = new List<float>();
+        DateTime? previousWeekStart = null;
+        float previousWeekScore = 0;
+        foreach (IGrouping<DateTime, ScoreEntry> week in weeklyScores)
+        {
+            DateTime currentWeekStart = week.Key;
+            float currentWeekScore = week.Max(s => s.Score);
+
+            if (previousWeekStart.HasValue)
+            {
+                weeklyScoreChanges.Add(currentWeekScore - previousWeekScore);
+            }
+
+            previousWeekStart = currentWeekStart;
+            previousWeekScore = currentWeekScore;
+        }
+
+        // Calculate average weekly score change
+        if (weeklyScoreChanges.Count > 0)
+        {
+            statistics.ScoreEvolution = weeklyScoreChanges.Average();
+        }
+        else
+        {
+            statistics.ScoreEvolution = 0;
+        }
+    }
+
     private async Task<T?> LoadJsonAsync<T>(string filePath)
     {
         if (!File.Exists(filePath)) return default;
@@ -118,4 +220,22 @@ public class CharacterAnalysisService
             return default;
         }
     }
+
+
+    private static DateTime GetStartOfWeek(DateTime date, string region)
+    {
+        if (region == "us")
+        {
+            // Pour la région NA, le reset est le mardi
+            int diff = (7 + (date.DayOfWeek - DayOfWeek.Tuesday)) % 7;
+            return date.AddDays(-1 * diff).Date;
+        }
+        else
+        {
+            // Pour les autres régions (EU, etc.), le reset est le mercredi
+            int diff = (7 + (date.DayOfWeek - DayOfWeek.Wednesday)) % 7;
+            return date.AddDays(-1 * diff).Date;
+        }
+    }
+
 }
