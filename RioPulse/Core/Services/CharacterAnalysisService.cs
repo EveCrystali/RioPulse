@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Concurrent;
+using System.Text;
 using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using RioPulse.Core.Models;
@@ -56,16 +57,16 @@ public class CharacterAnalysisService
 
     private void ProcessHistoricalData(IEnumerable<CharacterSnapshot> snapshots, CharacterStatistics stats)
     {
-        List<CharacterSnapshot> ordered = snapshots.OrderBy(s => s.Timestamp).ToList();
+        List<CharacterSnapshot> orderedCharacterSnapshot = snapshots.OrderBy(s => s.Timestamp).ToList();
 
-        foreach (CharacterSnapshot? snapshot in ordered)
+        foreach (CharacterSnapshot? snapshot in orderedCharacterSnapshot)
         {
             UpdateScoreHistory(snapshot, stats);
             TrackGuildEvolution(snapshot, stats);
             TrackDungeonBests(snapshot, stats);
         }
 
-        stats.CurrentMythicPlusScore = ordered.Last().Character.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
+        stats.CurrentMythicPlusScore = orderedCharacterSnapshot.Last().Character.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
     }
 
     private void CalculateMetrics(CharacterStatistics stats)
@@ -101,7 +102,8 @@ public class CharacterAnalysisService
             denominator += (xValues[i] - meanX) * (xValues[i] - meanX);
         }
 
-        return denominator == 0 ? 0 : numerator / denominator;
+        const float epsilon = 1e-6f;
+        return Math.Abs(denominator) < epsilon ? 0 : numerator / denominator;
     }
 
 
@@ -122,8 +124,7 @@ public class CharacterAnalysisService
             {
                 statistics.ScoreHistory.Add(new ScoreEntry
                 {
-                    // Utiliser la date de modification du fichier comme timestamp
-                    Timestamp = File.GetLastWriteTime(filePath),
+                    Timestamp = DateTime.TryParse(Path.GetFileNameWithoutExtension(filePath), System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime parsedDate) ? parsedDate : File.GetLastWriteTime(filePath),
                     Score = currentSeasonScores.Scores["all"]
                 });
             }
@@ -146,12 +147,22 @@ public class CharacterAnalysisService
         if (snapshot.Character.Guild?.GuildMembers == null)
             return;
 
-        float currentScore = snapshot.Character.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0;
+        Dictionary<string, float> latestScores = new Dictionary<string, float>();
+        foreach (GuildMember member in snapshot.Character.Guild.GuildMembers)
+        {
+            string latestFile = GetLatestJsonFile(member.Character.Name);
+            if (latestFile != null)
+            {
+                CharacterSnapshot json = LoadJsonAsync(latestFile).Result;
+                var scores = json.MythicPlusScoresBySeason?[0]?.Scores;
+                if (scores != null)
+                {
+                    latestScores[member.Character.Name] = scores["all"] ?? 0;
+                }
+            }
+        }
 
-        var guildRank = snapshot.Character.Guild.GuildMembers
-            .OrderByDescending(m => m.MythicPlusScoresBySeason?[0]?.Scores["all"] ?? 0)
-            .ToList()
-            .FindIndex(m => m.Name == snapshot.Character.Name) + 1;
+        int guildRank = latestScores.OrderByDescending(x => x.Value).ToList().FindIndex(x => x.Key == snapshot.Character.Name) + 1;
 
         stats.GuildRankHistory.Add(new GuildRankEntry
         {
@@ -159,6 +170,16 @@ public class CharacterAnalysisService
             Rank = guildRank,
             GuildMemberCount = snapshot.Character.Guild.GuildMembers.Count
         });
+    }
+
+    // Method to get the latest .json file of a character
+    private string GetLatestJsonFile(string characterName)
+    {
+        List<string> characterFiles = Directory.GetFiles(Path.Combine(_dataPath, characterName), "*.json")
+            .OrderBy(f => f)
+            .ToList();
+
+        return characterFiles.LastOrDefault();
     }
 
 
@@ -205,14 +226,14 @@ public class CharacterAnalysisService
         }
     }
 
-    private async Task<T?> LoadJsonAsync<T>(string filePath)
+    private static async Task<CharacterSnapshot?> LoadJsonAsync(string filePath)
     {
         if (!File.Exists(filePath)) return default;
 
         string json = await File.ReadAllTextAsync(filePath);
         try
         {
-            return JsonSerializer.Deserialize<T>(json);
+            return JsonSerializer.Deserialize<CharacterSnapshot>(json);
         }
         catch (JsonException ex)
         {
@@ -220,7 +241,6 @@ public class CharacterAnalysisService
             return default;
         }
     }
-
 
     private static DateTime GetStartOfWeek(DateTime date, string region)
     {
