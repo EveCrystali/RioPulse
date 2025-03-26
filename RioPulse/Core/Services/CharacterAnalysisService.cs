@@ -2,6 +2,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using RioPulse.Core.Models;
 
@@ -142,7 +143,7 @@ public class CharacterAnalysisService
         }
     }
 
-    private void TrackGuildEvolution(CharacterSnapshot snapshot, CharacterStatistics stats)
+    private async Task TrackGuildEvolution(CharacterSnapshot snapshot, CharacterStatistics stats)
     {
         if (snapshot.Character.Guild?.GuildMembers == null)
             return;
@@ -153,11 +154,14 @@ public class CharacterAnalysisService
             string latestFile = GetLatestJsonFile(member.Character.Name);
             if (latestFile != null)
             {
-                CharacterSnapshot json = LoadJsonAsync(latestFile).Result;
-                var scores = json.MythicPlusScoresBySeason?[0]?.Scores;
+                CharacterSnapshot? json = await LoadJsonAsync(latestFile);
+                if (json == null)
+                    continue;
+
+                Dictionary<string, float>? scores = json.Character.MythicPlusScoresBySeason?[0]?.Scores;
                 if (scores != null)
                 {
-                    latestScores[member.Character.Name] = scores["all"] ?? 0;
+                    latestScores[member.Character.Name] = scores["all"];
                 }
             }
         }
@@ -233,7 +237,8 @@ public class CharacterAnalysisService
         string json = await File.ReadAllTextAsync(filePath);
         try
         {
-            return JsonSerializer.Deserialize<CharacterSnapshot>(json);
+            using var memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(json));
+            return await JsonSerializer.DeserializeAsync<CharacterSnapshot>(memoryStream);
         }
         catch (JsonException ex)
         {
