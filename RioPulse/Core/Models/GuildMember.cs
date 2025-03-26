@@ -8,5 +8,5 @@ public class GuildMember
     public int Rank { get; set; }
 
     [JsonPropertyName("character")]
-    public Character Character { get; set; } // Note: Not a Character?
+    public Character Character { get; set; } 
 }
