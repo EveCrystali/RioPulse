@@ -22,8 +22,8 @@ public class RaiderIoService
         try
         {
             // HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?access_key={_apiKey}&region={region}&realm={realm}&name={name}&fields=mythic_plus_scores,guild");
-            HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores_by_season:season-tww-2,guild" );
             // HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores_by_season:current,guild" );
+            HttpResponseMessage response = await _httpClient.GetAsync($"characters/profile?region={region}&realm={realm}&name={name}&fields=mythic_plus_scores_by_season:season-tww-2,guild,mythic_plus_recent_runs,mythic_plus_best_runs,mythic_plus_alternate_runs" );
 
 
             if (!response.IsSuccessStatusCode)
