@@ -59,4 +59,13 @@ public class Character
 
     [JsonPropertyName("guild")]
     public Guild? Guild { get; set; }
+
+    [JsonPropertyName("mythic_plus_recent_runs")]
+    public List<MythicPlusRecentRun>? MythicPlusRecentRuns { get; set; }
+
+    [JsonPropertyName("mythic_plus_best_runs")]
+    public List<MythicPlusBestRun>? MythicPlusBestRuns { get; set; }
+
+    [JsonPropertyName("mythic_plus_alternate_runs")]
+    public List<MythicPlusAlternateRun>? MythicPlusAlternateRuns { get; set; }
 }
